@@ -7,7 +7,9 @@ import java.util.Scanner;
 public class HTTPServer {
     public static void main(String args[]) throws IOException{
         int portnum;
-        Scanner scan = new Scanner(System.in);+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What port would you like to open up on? Default: 8080");
+        scan.nextInt();
         ServerSocket server = new ServerSocket(8080);
         System.out.println("Listening for connection on port " + portnum);
         while(true){
